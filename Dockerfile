@@ -3,9 +3,9 @@ FROM rockylinux:8.5
 LABEL author="Abdul Pasaribu" \
     author.email="abdoelrachmad@gmail.com" \
     author.website="https://misterabdul.github.io"
-LABEL name="Docker for laminas template" \
-    description="Docker image for laminas template usage" \
-    url="https://hub.docker.com/r/misterabdul/docker-for-laminas-template"
+LABEL name="Docker for Laminas API Tools OAuth2" \
+    description="Docker image for Laminas API Tools OAuth2 apps." \
+    url="https://hub.docker.com/r/misterabdul/docker-for-laminas-api-tools-oauth2"
 LABEL image.os="RockyLinux-8.5" \
     image.server="nginx-1.20" \
     image.php="php-8.0"
