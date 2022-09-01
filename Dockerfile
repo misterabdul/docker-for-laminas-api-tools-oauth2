@@ -8,7 +8,7 @@ LABEL name="Docker for Laminas API Tools OAuth2" \
     url="https://hub.docker.com/r/misterabdul/docker-for-laminas-api-tools-oauth2"
 LABEL image.os="RockyLinux-8.5" \
     image.server="nginx-1.20" \
-    image.php="php-8.0"
+    image.php="php-7.4"
 
 RUN dnf update -y
 RUN dnf install -y epel-release
@@ -29,7 +29,7 @@ RUN dnf module reset -y nginx \
     nginx-all-modules
 
 RUN dnf module reset -y php \
-    && dnf module enable -y php:8.0 \
+    && dnf module enable -y php:7.4 \
     && dnf install -y php \
     php-bcmath \
     php-cli \
